@@ -34,17 +34,19 @@ public:
 };
 
 int main() {
-    Color c;
-    c.setRed(100);
-    c.setGreen(150);
-    c.setBlue(200);
+    Color black;                //default
+    Color white(255,255,255);   //parameter --white
+ 
 
-    cout << "Color Class starting...!\n";
+    cout << "Black: "
+         << black.getRed() << ", "
+         << black.getGreen() <<", "
+         << black.getBlue() << ", ";
 
-    //Printouts with getters
-    cout << "Red: " << c.getRed()
-         << " Green: " << c.getGreen()
-         << " Blue: " << c.getBlue() << "\n";
+    cout << "White: "
+         << white.getRed() << ", "
+         << white.getGreen() <<", "
+         << white.getBlue() << ", ";
 
     return 0;
 }
