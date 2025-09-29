@@ -33,7 +33,7 @@ public:
     int getBlue() const {return blue; }
 
     void print() const {
-        cout << "RGB" << red << ", " << green << ", " << blue << ")\n";
+        cout << "RGB (" << red << ", " << green << ", " << blue << ")\n";
     }
 };
 
