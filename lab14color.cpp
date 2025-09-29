@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 /*
 Brandon Julao
 COMSC-210-5470
@@ -14,10 +16,18 @@ private:
     int blue;
 
 public:
-    // Empty for now
+    void setRed(int r) {red = r; }
+    void setGreen(int g) {green =g; }
+    void setBlue(int b) {blue =b; }
+
+    int getRed() const {return red; }
+    int getGreen() const {return green; }
+    int getBlue() const {return blue; }
 };
 
 int main() {
-    std::cout << "Color Class starting...!\n";
+    cout << "Color Class starting...!\n";
+
+    
     return 0;
 }
